@@ -45,7 +45,6 @@ public class TrangSucForm extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        dkinhLabel = new javax.swing.JLabel();
         cdaiLabel = new javax.swing.JLabel();
         kdangLabel = new javax.swing.JLabel();
         kcoLabel = new javax.swing.JLabel();
@@ -69,6 +68,7 @@ public class TrangSucForm extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         reloadBtn1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        dkinhLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 255, 255));
@@ -115,13 +115,9 @@ public class TrangSucForm extends javax.swing.JFrame {
         jLabel7.setText("Đơn Giá:");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, -1, 20));
 
-        dkinhLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        dkinhLabel.setText("Đường Kính:");
-        getContentPane().add(dkinhLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, -1, 20));
-
         cdaiLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         cdaiLabel.setText("Chiều Dài:");
-        getContentPane().add(cdaiLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 340, -1, 20));
+        getContentPane().add(cdaiLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 340, -1, 20));
 
         kdangLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         kdangLabel.setText("Kiểu Dáng:");
@@ -233,6 +229,10 @@ public class TrangSucForm extends javax.swing.JFrame {
                 chonDong(row);
             }
         });
+
+        dkinhLabel.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        dkinhLabel.setText("Đường Kính:");
+        getContentPane().add(dkinhLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
