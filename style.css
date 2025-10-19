@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: black;
+}
+
+canvas {
+  display: block;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d8b0ff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 2.5s ease, transform 3s ease;
+  text-shadow: 0 0 25px #b266ff, 0 0 60px #8000ff, 0 0 100px #e6ccff;
+}
+
+#text.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.1);
+}
